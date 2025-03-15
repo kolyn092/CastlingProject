@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\main">
+      <UniqueIdentifier>{8a7685c8-0af7-46e4-9f9a-31310376b54e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\D3DEngine">
+      <UniqueIdentifier>{75e0ab76-ad73-4494-ba5c-5c60583e8d0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Shader">
+      <UniqueIdentifier>{824f87c9-7a70-448d-b8b0-a25a59622887}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Camera">
+      <UniqueIdentifier>{51fded64-78ae-4716-895e-f3abc2106dad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\dbg_memory">
+      <UniqueIdentifier>{4f524f0a-a8d3-4164-9d52-61b03db8b9f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Light">
+      <UniqueIdentifier>{d71abf1a-76bc-43e8-b600-9194df8208e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Obejct">
+      <UniqueIdentifier>{2718592e-56a3-459e-830a-d2cb880f9210}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Shader\fx">
+      <UniqueIdentifier>{e9e7052e-09f3-4a94-9f80-bd0f59795919}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\MEMO">
+      <UniqueIdentifier>{a0725459-e149-440d-bad7-75f50cd70bc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\KeyInput">
+      <UniqueIdentifier>{8df355c3-102d-4446-a99d-40f3f6647819}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Map">
+      <UniqueIdentifier>{8fcb1f39-b2a5-4216-a8a1-42e0c6723a6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\ObjectManager">
+      <UniqueIdentifier>{6c097732-cf8f-4822-873e-544bd2918b25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\UI">
+      <UniqueIdentifier>{d2541c1a-643a-421a-a320-998547ee6685}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\UI\Sprite">
+      <UniqueIdentifier>{90f9cc85-a463-4c0f-854d-de7bd2526498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\UIManager">
+      <UniqueIdentifier>{63464328-313c-46a9-a707-4d9acaac0d21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\SkyBox">
+      <UniqueIdentifier>{c2ff91ab-4778-427e-8b59-a022f11dc99e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Server">
+      <UniqueIdentifier>{7a47442d-e90b-4c18-816a-6ce36b0afe84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\SoundManager">
+      <UniqueIdentifier>{4d5decc3-739a-455d-afb1-523bafb84059}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\FMOD">
+      <UniqueIdentifier>{c8b0b9d9-75de-4534-a88a-1b2f49a7d8de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\ModelLoadManager">
+      <UniqueIdentifier>{f21c54ac-fc1c-4d09-b963-f726f8f1c2c9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CGameProcess.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MainApp.cpp">
+      <Filter>소스 파일\main</Filter>
+    </ClCompile>
+    <ClCompile Include="CAppProcess.cpp">
+      <Filter>소스 파일\main</Filter>
+    </ClCompile>
+    <ClCompile Include="D3DEngine.cpp">
+      <Filter>소스 파일\D3DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>소스 파일\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>소스 파일\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="dbg_memory.cpp">
+      <Filter>소스 파일\dbg_memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Light.cpp">
+      <Filter>소스 파일\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelAse.cpp">
+      <Filter>소스 파일\Obejct</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeAse.cpp">
+      <Filter>소스 파일\Obejct</Filter>
+    </ClCompile>
+    <ClCompile Include="ParserAse.cpp">
+      <Filter>소스 파일\Obejct</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyInput.cpp">
+      <Filter>소스 파일\KeyInput</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelObject.cpp">
+      <Filter>소스 파일\Obejct</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelLoadManager.cpp">
+      <Filter>소스 파일\ModelLoadManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectManager.cpp">
+      <Filter>소스 파일\ObjectManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Castling_Server\Castling_Server\Map.cpp">
+      <Filter>소스 파일\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientMap.cpp">
+      <Filter>소스 파일\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="CSprite.cpp">
+      <Filter>소스 파일\UI\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="UI.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UIManager.cpp">
+      <Filter>소스 파일\UIManager</Filter>
+    </ClCompile>
+    <ClCompile Include="SkyBox.cpp">
+      <Filter>소스 파일\SkyBox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Castling_Server\Castling_Server\UserData.cpp">
+      <Filter>소스 파일\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkCallback.cpp">
+      <Filter>소스 파일\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundManager.cpp">
+      <Filter>소스 파일\SoundManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CGameProcess.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MainApp.h">
+      <Filter>소스 파일\main</Filter>
+    </ClInclude>
+    <ClInclude Include="CAppProcess.h">
+      <Filter>소스 파일\main</Filter>
+    </ClInclude>
+    <ClInclude Include="D3DEngine.h">
+      <Filter>소스 파일\D3DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="DXEngineDefine.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>소스 파일\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>소스 파일\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="dbg_memory.h">
+      <Filter>소스 파일\dbg_memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Light.h">
+      <Filter>소스 파일\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelAse.h">
+      <Filter>소스 파일\Obejct</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeAse.h">
+      <Filter>소스 파일\Obejct</Filter>
+    </ClInclude>
+    <ClInclude Include="ParserAse.h">
+      <Filter>소스 파일\Obejct</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyInput.h">
+      <Filter>소스 파일\KeyInput</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelObject.h">
+      <Filter>소스 파일\Obejct</Filter>
+    </ClInclude>
+    <ClInclude Include="GameDefine.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelLoadManager.h">
+      <Filter>소스 파일\ModelLoadManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectManager.h">
+      <Filter>소스 파일\ObjectManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Castling_Server\Castling_Server\Map.h">
+      <Filter>소스 파일\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientMap.h">
+      <Filter>소스 파일\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="CSprite.h">
+      <Filter>소스 파일\UI\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="UI.h">
+      <Filter>소스 파일\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UIManager.h">
+      <Filter>소스 파일\UIManager</Filter>
+    </ClInclude>
+    <ClInclude Include="SkyBox.h">
+      <Filter>소스 파일\SkyBox</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AlignedAllocationPolicy.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkCallback.h">
+      <Filter>소스 파일\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundManager.h">
+      <Filter>소스 파일\SoundManager</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundDefine.h">
+      <Filter>소스 파일\SoundManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Extern\FMod\inc\fmod.h">
+      <Filter>소스 파일\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Extern\FMod\inc\fmod.hpp">
+      <Filter>소스 파일\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Extern\FMod\inc\fmod_codec.h">
+      <Filter>소스 파일\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Extern\FMod\inc\fmod_common.h">
+      <Filter>소스 파일\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Extern\FMod\inc\fmod_dsp.h">
+      <Filter>소스 파일\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Extern\FMod\inc\fmod_dsp_effects.h">
+      <Filter>소스 파일\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Extern\FMod\inc\fmod_errors.h">
+      <Filter>소스 파일\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Extern\FMod\inc\fmod_output.h">
+      <Filter>소스 파일\FMOD</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="fx\Light.fx">
+      <Filter>소스 파일\Shader\fx</Filter>
+    </FxCompile>
+    <FxCompile Include="fx\Line.fx">
+      <Filter>소스 파일\Shader\fx</Filter>
+    </FxCompile>
+    <FxCompile Include="fx\NonTex.fx">
+      <Filter>소스 파일\Shader\fx</Filter>
+    </FxCompile>
+    <FxCompile Include="fx\Sprite.fx">
+      <Filter>소스 파일\Shader\fx</Filter>
+    </FxCompile>
+    <FxCompile Include="fx\SkyBox.fx">
+      <Filter>소스 파일\Shader\fx</Filter>
+    </FxCompile>
+    <FxCompile Include="fx\Default.fx">
+      <Filter>소스 파일\Shader\fx</Filter>
+    </FxCompile>
+    <FxCompile Include="fx\TexLambert.fx">
+      <Filter>소스 파일\Shader\fx</Filter>
+    </FxCompile>
+    <FxCompile Include="fx\PixelLight.fx">
+      <Filter>소스 파일\Shader\fx</Filter>
+    </FxCompile>
+    <FxCompile Include="fx\Tex.fx">
+      <Filter>소스 파일\Shader\fx</Filter>
+    </FxCompile>
+    <FxCompile Include="fx\VertexLight.fx">
+      <Filter>소스 파일\Shader\fx</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="MEMO.txt">
+      <Filter>소스 파일\MEMO</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CastlingClient2.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Extern\FMod\lib\x86\fmod.dll">
+      <Filter>소스 파일\FMOD</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\Extern\FMod\lib\x86\fmod_vc.lib">
+      <Filter>소스 파일\FMOD</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Data\UI\castling_logo.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

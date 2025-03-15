@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{E26158F5-E860-44FB-AEB2-9217D8989530}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>CastlingClient2</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\Extern\FMod\inc;..\..\Castling_Server\Castling_Server;..\Extern\DXTex\Inc;..\Extern\DXTK\Inc;..\..\Socket_Class\Socket_Class;$(IncludePath)</IncludePath>
+    <LibraryPath>..\Extern\FMod\lib\x86;..\..\Socket_Class\Debug;..\Extern\DXTK\Lib;..\Extern\DXTex\Lib;..\Extern\Lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\Extern\FMod\inc;..\..\Castling_Server\Castling_Server;..\Extern\DXTex\Inc;..\Extern\DXTK\Inc;..\..\Socket_Class\Socket_Class;$(IncludePath)</IncludePath>
+    <LibraryPath>..\Extern\FMod\lib\x86;..\Extern\DXTex\Lib;..\Extern\DXTK\Lib;..\Extern\Lib;..\..\Socket_Class\Release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Socket_Class.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>copy "..\..\Socket_Class\Debug\Socket_Class.dll" ".\"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Socket_Class.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>copy "..\..\Socket_Class\Release\Socket_Class.dll" ".\"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Castling_Server\Castling_Server\Map.cpp" />
+    <ClCompile Include="..\..\Castling_Server\Castling_Server\UserData.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="CAppProcess.cpp" />
+    <ClCompile Include="CGameProcess.cpp" />
+    <ClCompile Include="ClientMap.cpp" />
+    <ClCompile Include="CSprite.cpp" />
+    <ClCompile Include="NetworkCallback.cpp" />
+    <ClCompile Include="ObjectManager.cpp" />
+    <ClCompile Include="ModelLoadManager.cpp" />
+    <ClCompile Include="ModelObject.cpp" />
+    <ClCompile Include="D3DEngine.cpp" />
+    <ClCompile Include="dbg_memory.cpp" />
+    <ClCompile Include="KeyInput.cpp" />
+    <ClCompile Include="Light.cpp" />
+    <ClCompile Include="MainApp.cpp" />
+    <ClCompile Include="ModelAse.cpp" />
+    <ClCompile Include="NodeAse.cpp" />
+    <ClCompile Include="ParserAse.cpp" />
+    <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="SkyBox.cpp" />
+    <ClCompile Include="SoundManager.cpp" />
+    <ClCompile Include="UI.cpp" />
+    <ClCompile Include="UIManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Castling_Server\Castling_Server\Map.h" />
+    <ClInclude Include="..\Extern\FMod\inc\fmod.h" />
+    <ClInclude Include="..\Extern\FMod\inc\fmod.hpp" />
+    <ClInclude Include="..\Extern\FMod\inc\fmod_codec.h" />
+    <ClInclude Include="..\Extern\FMod\inc\fmod_common.h" />
+    <ClInclude Include="..\Extern\FMod\inc\fmod_dsp.h" />
+    <ClInclude Include="..\Extern\FMod\inc\fmod_dsp_effects.h" />
+    <ClInclude Include="..\Extern\FMod\inc\fmod_errors.h" />
+    <ClInclude Include="..\Extern\FMod\inc\fmod_output.h" />
+    <ClInclude Include="AlignedAllocationPolicy.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="CAppProcess.h" />
+    <ClInclude Include="CGameProcess.h" />
+    <ClInclude Include="ClientMap.h" />
+    <ClInclude Include="CSprite.h" />
+    <ClInclude Include="GameDefine.h" />
+    <ClInclude Include="NetworkCallback.h" />
+    <ClInclude Include="ObjectManager.h" />
+    <ClInclude Include="ModelLoadManager.h" />
+    <ClInclude Include="ModelObject.h" />
+    <ClInclude Include="D3DEngine.h" />
+    <ClInclude Include="dbg_memory.h" />
+    <ClInclude Include="DXEngineDefine.h" />
+    <ClInclude Include="KeyInput.h" />
+    <ClInclude Include="Light.h" />
+    <ClInclude Include="MainApp.h" />
+    <ClInclude Include="ModelAse.h" />
+    <ClInclude Include="NodeAse.h" />
+    <ClInclude Include="ParserAse.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="SkyBox.h" />
+    <ClInclude Include="SoundDefine.h" />
+    <ClInclude Include="SoundManager.h" />
+    <ClInclude Include="UI.h" />
+    <ClInclude Include="UIManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="fx\Default.fx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="fx\Light.fx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="fx\Line.fx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="fx\NonTex.fx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="fx\PixelLight.fx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="fx\SkyBox.fx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="fx\Sprite.fx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="fx\Tex.fx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="fx\TexLambert.fx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="fx\VertexLight.fx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="MEMO.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CastlingClient2.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Extern\FMod\lib\x86\fmod.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\Extern\FMod\lib\x86\fmod_vc.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Data\UI\castling_logo.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
